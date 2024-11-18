@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Calculator</h1>
+    <div style="text-align: center;">
+        <table style="border-radius: 10px; width: 300px;height: 500px;  margin-left: 500px; background-color: rgb(234, 234, 234);">
+            <thead>
+                <th colspan="4"><input id="result" disabled type="text" placeholder="0"  style="width: 430px; height: 30px; margin-top: 20px; text-align: right;"></th>
+            </thead>
+            <tbod>
+                <tr style="color: rgb(0, 0, 0);">
+
+                    <td><button onclick="calcclear()" style="padding: 20px 20px; background-color: #555555; border-radius: 10px; border: 0;">AC</button></td>
+                    <td><button onclick="displaycontent('.')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">.</button></td>
+                    <td><button onclick="removelastdigit()" style="padding: 20px 20px; background-color: #555555; border-radius: 10px;border: 0;">&#9003</button></td>
+                    <td><button onclick="displaycontent('/')"class="button" style="padding: 20px 20px;background-color: #f2a100; border-radius: 10px;border: 0;">/</button></td>
+                    
+                    
+                </tr>
+                <tr style="color: rgb(0, 0, 0);">
+                    <td><button onclick="displaycontent('7')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">7</button></td>
+                    <td><button onclick="displaycontent('8')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">8</button></td>
+                    <td><button onclick="displaycontent('9')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">9</button></td>
+                    <td><button  onclick="displaycontent('+')"class="button" style="padding: 20px 20px;background-color: #f2a100; border-radius: 10px;border: 0;">+</button></td>
+                </tr>
+                <tr style="color: rgb(0, 0, 0);">
+                    <td><button onclick="displaycontent('4')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">4</button></td>
+                    <td><button onclick="displaycontent('5')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">5</button></td>
+                    <td><button onclick="displaycontent('6')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">6</button></td>
+                    <td><button onclick="displaycontent('-')"class="button" style="padding: 20px 20px;background-color: #f2a100; border-radius: 10px;border: 0;">-</button></td>
+                </tr>
+                <tr style="color: rgb(0, 0, 0);">
+                    <td><button onclick="displaycontent('1')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">1</button></td>
+                    <td><button onclick="displaycontent('2')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">2</button></td>
+                    <td><button onclick="displaycontent('3')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">3</button></td>
+                    <td><button onclick="displaycontent('*')"class="button" style="padding: 20px 20px;background-color: #f2a100; border-radius: 10px;border: 0;">*</button></td>
+                </tr>
+                <tr style="color: rgb(0, 0, 0);"> 
+                    <td><button style="border: 0;"></button></td>
+                    <td><button onclick="displaycontent('0')"class="button" style="padding: 20px 20px;background-color: #555555; border-radius: 10px;border: 0;">0</button></td>
+                    <td><button style="border: 0;"></button></td>
+                    <td><button onclick="calcout()" class="button" style="padding: 20px 20px;background-color: #1a31ff; border-radius: 10px;border: 0;">=</button></td>
+                </tr>
+            </tbod>
+        </table>
+    </div>
+       
+</body>
+<script src="./main.js">
+
+</script>
+</html>
